@@ -1,0 +1,444 @@
+@media screen and (min-width:768px) and (max-width:1022px){
+    /*-----------------------------------fashion1*/
+    .content_img1{
+        width: 100%;
+        text-align: center; 
+    }
+    
+    
+    .content_img1 img {
+        width: 90%; 
+        height: auto; 
+        object-fit: cover; 
+    }
+    .unbanvogue_nav{
+        display:flex;
+        margin-top:3vw;
+    }
+    .navbar3{
+        
+        background-color: #07032b;
+        font-size:clamp(14px, 0.7vw, 0.6rem);
+        position: fixed; 
+        top: 7.2vw;
+        left: 8vw;
+        color: #fff;
+        font-weight: 100;
+        opacity: 60%;
+    
+    }
+    .unbanvogue_nav{
+        position: relative;
+        z-index: 1000;
+        height: 12vw;
+    }
+    .urbanmain1{
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width:100%; 
+        height: auto;
+    }
+    .maintype{
+        color:#acacac;
+        font-size:clamp(20px, 1.6vw, 1.6rem);
+        margin-bottom: 0.1vw;
+        font-weight: 400;
+        text-align: center;
+        width:100%;
+        font-family:"continuous";
+    }
+    .maintype1{
+        color:#acacac;
+        font-size:clamp(20px, 1.6vw, 2rem);
+        margin-bottom: 0.5vw;
+        font-weight: 100;
+        text-align: center;
+      
+    }
+    
+    
+    
+    
+    .maintype2{
+        color:#acacac;
+        font-size:clamp(13px, 1vw, 0.8rem);
+        font-weight: 200;
+        text-align: center;
+    }
+    .urbanmain1{
+        margin-top:2vw;
+    }
+    
+    
+    /*---------navbar1*/
+    .navbar1{
+        display:flex;
+        justify-content: center;
+        gap: 6vw;
+        position: fixed; 
+        top: 6.5vw; 
+        left:21vw; 
+        width: 56%;}
+        
+    
+    
+    /* 기본 상태 */
+    /* 기본 a 태그 스타일 */
+    
+    
+    
+    .navbar2{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:2vw;
+        margin-right: 4vw;
+        position: fixed; 
+        top: 7.5vw;
+        left: 78vw;
+        width: 12%;
+        
+    }
+    .navbar2 a{
+        color:#acacac;
+        font-size:clamp(0.8rem , 1vw ,2rem);
+    }
+    .navbar2 a:hover,.navbar1 a:hover{
+        color:#bfff48;
+    }
+    
+    .navbarmain{
+        display:flex;
+        justify-content: flex-end;
+        gap: 19.9vw;
+        margin-top: 0.5vw;
+    }
+    
+    
+    
+    
+    /* 각 메뉴 항목 */
+    .navbartype1, .navbartype2, .navbartype3, .navbartype4 {
+        position: relative;
+    }
+    
+    .navbartype1 a, .navbartype2 a, .navbartype3 a,.navbartype4 a{
+        color: #e1e0e0;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        font-size:clamp(0.8rem , 1vw ,2rem);
+    }
+    
+    /* 서브 메뉴 스타일 (기본 숨김) */
+    .submenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 200px;
+        
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .submenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    .submenu ul li a {
+        color: #c5c4c4;
+        text-decoration: none;
+        font-weight: 200;
+    }
+    
+    /* 서브 메뉴 슬라이드 애니메이션 */
+    .submenu.open {
+        display: block;
+        animation: slideDown 0.3s ease-out;
+    }
+    
+    /* 슬라이드 애니메이션 */
+    @keyframes slideDown {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    
+    /*----------------------------------fashion1 end*/
+    
+    .red{
+        background:#fff;
+        height: 80vw;
+    }
+    
+    
+    /*------------main_content1*/
+    
+    .main_content1,.main_content2,.main_content3{
+        display:flex;
+        position: relative;
+        z-index: 1;
+        margin-top: -6vw; 
+    
+    }
+    
+    .content_img1,.content_img2,.content_img3,.content_img4,.content_img5,.content_img6,
+    .content2_img1,.content2_img2,.content2_img3,.content2_img4,.content2_img5,.content2_img6,
+    .content2_img7,.content2_img8,.content2_img9,.content2_img0,
+    
+    .content3_img1,.content3_img2,.content3_img3,.content3_img4,.content3_img5,.content3_img6,
+    .content3_img7,.content3_img8,.content3_img9,.content3_img0{
+        width:30vw;
+     
+        
+    }
+    .content2_img1 img,.content2_img2 img{
+        width:30vw;
+    }
+    .content_image1,.content_image2,.content_image3,.content_image4,.content_image5,.content_image6
+    
+    {
+        display:flex;
+        gap:5vw;
+       
+       
+       
+    }
+    .content2_image1,.content2_image2,.content2_image3,.content2_image4,.content2_image5,
+    .content3_image1,.content3_image2,.content3_image3,.content3_image4,.content3_image5{
+        display:flex;
+        gap:5vw;
+        margin-bottom: 8vw;
+        justify-content: center;
+    }
+    
+    .main_content1{
+       
+        flex-direction: column;
+        align-items: center;
+        gap:4vw;
+    }
+    .main_content2{
+        flex-direction: column;
+        align-items: center;
+        margin-top:5vw;
+        
+    }
+    .main_content3{
+        flex-direction: column;
+        align-items: center;
+        margin-top:5vw;
+        
+        
+    }
+    
+    .main_content2, .main_content3 {
+        display: none; /* 처음에는 안 보이게 설정 */
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .main_content2.show, .main_content3.show {
+        display: block;
+        opacity: 1;
+    }
+    .image_type1{
+        color:#a6a6a6;
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+    .image_type2{
+        color:#c9c9c9;
+        font-size: clamp(1rem, 1vw, 2rem);
+        margin-top:0.2vw;
+        font-weight: 600;
+        
+    }
+    .image_type3{
+        color:#fff;
+        font-size: 0.8rem;
+        margin-top:0.2vw;
+        
+    }
+    .image_type3{
+        color:#fff;
+        font-size: 0.8rem;
+        margin-top:1.2vw;
+        
+    }
+    .image_type4 {
+        color: #bfff48;
+        font-size: 0.8rem;
+        margin-top: 0.2vw;
+        animation: blink 3s infinite; /* 깜빡임 애니메이션 추가 */
+        font-style:italic;
+    }
+    
+    @keyframes blink {
+        0% {
+            opacity: 1; /* 불투명도 100% */
+        }
+        50% {
+            opacity: 0.5; /* 불투명도 0% (사라짐) */
+        }
+        100% {
+            opacity: 1; /* 불투명도 100% (다시 보임) */
+        }
+    }
+    
+    
+    /*===============아뜨랑스*/
+    .button{
+        text-decoration: none;
+        font-size:1em;
+        color:#dbdbdb;
+        padding:11px 42px;
+        border-radius: 0.5vw;
+        outline:0.5px solid#6e6e6e;
+        position: relative;
+        overflow: hidden;
+        font-weight: 200;
+        margin:0 auto;
+        width:30vw;
+    }
+    .button:before{
+        content:'';
+        position: absolute;
+        left:-50px;
+        top:0;
+        width:0%;
+        height:100%;
+        background:#eeeeee;
+        z-index:-5;
+        transform:skewX(35deg);
+        transition:width 1s;
+    }
+    .button:hover{color:#0a021e;}
+    .button:hover:before{
+        width:150%;
+    
+    }
+    .nodenmain2{
+        margin-top:11vw;
+        text-align: center;
+    }
+    
+     .line{
+        border:1px solid#676767;
+        margin-top:11vw;
+     }
+     /*.footer1{
+        height: 20vw;
+        background: #9e9e9e;
+     }*/
+    
+    
+    
+     footer {
+        background: #738792;
+    
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .footer-links a {
+        color: #b3b3b3;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0.4vw;
+        transition: filter 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+        filter: grayscale(100%) brightness(50%);
+       
+    }
+    
+    .footer-social a {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    .footer-social a i {
+        color: #b3b3b3;
+    }
+    
+    .footer_img img {
+        width: 3.5vw;
+        padding: 0.7vw;
+        transition: transform 0.3s ease;
+    }
+    
+    .footer_img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .btn_page_top {
+        position: fixed;
+        bottom: 6.04vw;
+        right: 6.7vw;
+        z-index: 40;
+        cursor: pointer;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .btn_page_top:hover {
+        background: url(img/arrow2.png);
+    }
+    
+    .btn_page_top:active {
+        transform: scale(0.8);
+    }
+    
+    .btn_page_top.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    /* 소셜 미디어 아이콘 hover 효과 */
+    .social-icons img {
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    
+    .social-icons img:hover {
+        filter: grayscale(100%) brightness(50%);
+        transform: scale(1.1); /* Hover 시 크기 확대 */
+    }
+    
+    /* 언어 선택 드롭다운 스타일 */
+    .footer-lang {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+    #language-select {
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 14px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    #language-select:focus {
+        outline: none;
+        border: 2px solid #bfff48; /* 연두색 테두리 */
+    }
+    
+    /* 기본 링크 색상과 hover 색상 */
+    }

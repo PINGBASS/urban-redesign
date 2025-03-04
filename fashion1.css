@@ -1,0 +1,79 @@
+*{padding:0; margin:0; box-sizing: border-box;}
+ ul{list-style:none;}
+a{text-decoration:none;
+  display: block;
+}
+li{list-style: none;}
+img{vertical-align: top;
+   /* padding: 33px;*/}
+/*header start*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+    background-image:linear-gradient(to right,#07032b,#07032b);
+    background-image:-webkit-linear-gradient(to right,#070532,#130d4d);
+
+    /*background-image:-webkit-linear-gradient(그라디언트 방향 단위는 deg(45deg)to right 위에서 아래로 그라디언트 / top right ( 상단에서 오른쪽 하단으로 줄여주세요.),첫번째 컬러,두번째 컬러) ;*/
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.button{
+    text-decoration: none;
+    font-size:1em;
+    color:#dbdbdb;
+    padding:11px 42px;
+    border-radius: 0.5vw;
+    outline:0.5px solid#6e6e6e;
+    position: relative;
+    overflow: hidden;
+    font-weight: 200;
+
+}
+.button:before{
+    content:'';
+    position: absolute;
+    left:-50px;
+    top:0;
+    width:0%;
+    height:100%;
+    background:#eeeeee;
+    z-index:-5;/*뒤로 빠져야 해서 -로 */
+    transform:skewX(35deg);
+    transition:width 1s;
+}
+.button:hover{color:#0a021e;}
+.button:hover:before{
+    width:150%;
+
+}
+.nodenmain1{
+    
+}
+.nodenmain3{
+    margin-top:10vw;
+}
+.maintype{
+    color:#acacac;
+    font-size:1.2rem;
+    margin-bottom: 0.5vw;
+    font-weight: 400;
+    text-align: center;
+}
+.maintype1{
+    color:#acacac;
+    font-size:0.8rem;
+    margin-bottom: 0.5vw;
+    font-weight: 100;
+    text-align: center;
+}
+.maintype2{
+    color:#acacac;
+    font-size:0.6rem;
+    margin-bottom: 5vw;
+    font-weight: 200;
+    text-align: center;
+}

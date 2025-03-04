@@ -1,0 +1,11 @@
+// Ferragamo-WCS integration file
+(() => {
+	try {
+		let integrationScript = document.createElement('script');
+		integrationScript.type = 'module';
+		integrationScript.src = 'https://assets.xgen.dev/js/f23863491002eac3210f6035ec756a41/sdkIntegration.js';
+		document.head.appendChild(integrationScript);
+	} catch (e) {
+		console.error(e);
+	}
+})();

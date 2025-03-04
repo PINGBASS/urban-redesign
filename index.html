@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    
+    <link rel="stylesheet" href="indexDesk.css">
+    
+    
+   
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    const mainContent2 = document.querySelector(".main_content2");
+    const mainContent3 = document.querySelector(".main_content3");
+
+    let clickCount = 0; 
+
+    loadMoreBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        if (clickCount === 0) {
+          
+            mainContent2.style.display = "block";
+            setTimeout(() => {
+                mainContent2.classList.add("show");
+            }, 50);
+        } else if (clickCount === 1) {
+            
+            mainContent3.style.display = "block";
+            setTimeout(() => {
+                mainContent3.classList.add("show");
+            }, 50);
+
+           
+            loadMoreBtn.style.display = "none";
+        }
+
+        clickCount++; 
+    });
+});
+
+
+
+
+
+ 
+    </script>
+
+</head>
+<body>
+
+ <div id="urbanvogue1">  
+    <div class="unbanvogue_nav">
+        <div class="urbanmain1">  
+            <a href="#" class="maintype">Urban Vogue</a>
+        <!-- <a href="#" class="maintype1">2020</a>-->
+            <a href="#" class="maintype2">"The city, your runway."</a>
+        </div>  
+    </div>   
+    <div class="navbarmain">
+        <div class="navbar3">
+            <p>Tel.010.6460.5271</p>
+        </div>
+
+        <div class="navbar1">
+                <div class="navbartype1">
+                    <a href="javascript:void(0);">Coming Soon</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="javascript:void(0);">Upcoming Releases</a></li>
+                            <li><a href="javascript:void(0);">Designer Interviews</a></li>
+                            <li><a href="javascript:void(0);">Anticipation Corner</a></li>
+                        </ul>
+                    </div>
+                </div>        
+                <div class="navbartype2">
+                    <a href="javascript:void(0);">Collections</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="javascript:void(0);">Limited Editions</a></li>
+                            <li><a href="javascript:void(0);">Designer Collections</a></li>
+                            <li><a href="javascript:void(0);">Seasonal Collections</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbartype3">
+                    <a href="javascript:void(0);">The Story</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="javascript:void(0);">Brand Philosophy</a></li>
+                            <li><a href="javascript:void(0);">Designer's Vision</a></li>
+                            <li><a href="javascript:void(0);">Customer Reviews & Styles</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbartype4">
+                    <a href="javascript:void(0);">Contact</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="javascript:void(0);">Customer Support</a></li>
+                            <li><a href="javascript:void(0);">FAQ (Frequently Asked Questions)</a></li>
+                            <li><a href="javascript:void(0);">Collaboration Inquiries</a></li>
+                            <li><a href="javascript:void(0);">Social Media Links</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="navbar2">
+                <div class="navbartype9">
+                    <a href="login.html">Login</a>
+                </div>        
+                <div class="navbartype6">
+                    <a href="#">Cart</a>
+                </div>
+                <div class="navbartype7">
+                    <a href="#">Join</a>
+                </div>
+        </div>
+    </div>
+    
+    
+<div class="what">    
+    <div class="main_content1">
+
+
+
+            <div class="content_image1">
+                <div class="content_img1"><!--7-->
+                    <img src="아방솔로10/Untitled-1.png">
+                    <p class="image_type1">Takahiromiyashita The Soloist</p>
+                    <p class="image_type2">지퍼 디테일 패널 스웨트셔츠</p>
+                    <p class="image_type3">3,086,000</p>
+                    <p class="image_type4"></p>
+                </div>
+                <div class="content_img1">
+                    <img src="티셔츠/1.png"><!--8-->
+                    <p class="image_type1">Marni</p>
+                    <p class="image_type2">베이 페이턴트 가죽 토트 백</p>
+                    <p class="image_type3">￦1,030,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+            </div>
+
+            <div class="content_image1">
+                <div class="content_img1 pageimg_1" ><!--3-->
+                    <a href="fashion3.html"><img src="아방3/23804586_54611358_2048 copy.png"></a>
+                    <p class="image_type1">Enfants Riches Déprimés</p>
+                    <p class="image_type2">텍사스 파스터 어셈블리지 티셔츠</p>
+                    <p class="image_type3">￦1,116,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+                <div class="content_img1 pageimg_1">
+                    <img src="티셔츠/26.png" style="    height: 36vw;"> <!--2-->
+                    <div class="andersson">
+                        <p class="image_type1">Andersson Bell</p>
+                        <p class="image_type2">비엔탄 집업 재킷</p>
+                        <p class="image_type3">￦1,429,000</p>
+                        <p class="image_type4"></p>
+                    </div>
+                </div>
+ 
+            </div>
+
+
+            <div class="content_image1">
+                <div class="content_img1">
+                    <img src="티셔츠/2.png"><!--9-->
+                    <p class="image_type1">Givenchy</p>
+                    <p class="image_type2">실크 반소매 셔츠</p>
+                    <p class="image_type3">￦1,608,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+                <div class="content_img1">
+                    <img src="티셔츠/3.png"><!--10-->
+                    <p class="image_type1">valentino Garavani</p>
+                    <p class="image_type2">싱글 브레스티드 재킷</p>
+                    <p class="image_type3">￦1,412,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+
+              
+            </div>
+
+
+            <div class="content_image1">
+                <div class="content_img1">
+                    <img src="티셔츠/8.png"><!--15-->
+                    <p class="image_type1">Tessitura Body Couture</p>
+                    <p class="image_type2">그래픽 프린트 셔츠</p>
+                    <p class="image_type3">￦1,305,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+                <div class="content_img1">
+                    <img src="티셔츠/9.png"><!--16-->
+                    <p class="image_type1">Jil Sander</p>
+                    <p class="image_type2">투웨이 토트 백</p>
+                    <p class="image_type3">￦2,907,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+                
+            </div>
+
+
+            <div class="content_image1">
+                <div class="content_img1"><!--바바리자켓 핑크자켓--><!--5-->
+                    <img src="아방5/23804586_54611358_2048 copy.png">
+                    <p class="image_type1">Enfants Riches Deprimes</p>
+                    <p class="image_type2">텍사스 파스터 어셈블리지 티셔츠</p>
+                    <p class="image_type3">￦886,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+                <div class="content_img1"><!--6-->
+                    <img src="아방4/24892862_55093141_2048 copy.png">
+                    <p class="image_type1">Enfants Riches Déprimés</p>
+                    <p class="image_type2">아상 블러주 써머 티셔츠</p>
+                    <p class="image_type3">￦916,000</p>
+                    <p class="image_type4"></p>
+                </div>
+            </div>
+
+
+            <div class="content_image1">
+                <div class="content_img1">
+                    <img src="티셔츠/4.png"><!--11-->
+                    <p class="image_type1">Acne Studios</p>
+                    <p class="image_type2">프린트 와이드 진</p>
+                    <p class="image_type3">￦925,000</p>
+                    <p class="image_type4"></p>
+                </div>
+                <div class="content_img1">
+                    <img src="티셔츠/5.png"><!--12-->
+                    <p class="image_type1">DRIES VAN NOTEN</p>
+                    <p class="image_type2">더블 브레스티드 블레이저</p>
+                    <p class="image_type3">￦2,160,000</p>
+                    <p class="image_type4"></p>
+                </div>
+            </div>
+    </div>
+
+    <div class="main_content2" style="display: none;">
+            <div class="content2_image1">
+                <div class="content_img1"><!--13-->
+                        <img src="티셔츠/6.png">
+                        <p class="image_type1">Jil Sander</p>
+                        <p class="image_type2">v넥 폴로 셔츠</p>
+                        <p class="image_type3">￦1,319,000</p>
+                        <p class="image_type4"></p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/7.png"><!--14-->
+                        <p class="image_type1">tessitura Body Couture</p>
+                        <p class="image_type2">모노크롬 티셔츠</p>
+                        <p class="image_type3">￦1,305,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content2_image2">
+                <div class="content_img1">
+                    <img src="아방솔로6/Untitled-1.png"><!--1-->
+                    <p class="image_type1">Dolce & Gabbana</p>
+                    <p class="image_type2">체스 모티프 실크 셔츠 </p>
+                    <p class="image_type3">￦2,660,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+                <div class="content_img1"><!--4-->
+                    <img src="아방솔로9/24892862_55093141_2048 copy.png">
+                    <p class="image_type1">Ralph Lauren Purple</p>
+                    <p class="image_type2">라리탄 바시티 봄버 재킷</p>
+                    <p class="image_type3">₩5,376,000</p>
+                    <p class="image_type4">New</p>
+                </div>
+            </div>
+            
+            <div class="content2_image3">
+                <div class="content_img1">
+                        <img src="티셔츠/10.png"><!--17-->
+                        <p class="image_type1">LEMAIRE</p>
+                        <p class="image_type2">미디엄 기어 숄더 백</p>
+                        <p class="image_type3">￦2,490,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/11.png"><!--18-->
+                        <p class="image_type1">Casablanca</p>
+                        <p class="image_type2">레더 트리밍 재킷</p>
+                        <p class="image_type3">￦1,790,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content2_image4">
+                <div class="content_img1">
+                    <img src="티셔츠/12.png"><!--19-->
+                        <p class="image_type1">Dolce & Gabbana</p>
+                        <p class="image_type2">스트라이프 볼링 셔츠</p>
+                        <p class="image_type3">￦2,409,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/13.png"><!--20-->
+                        <p class="image_type1">ETRO</p>
+                        <p class="image_type2">자카드 프린트 셔츠</p>
+                        <p class="image_type3">￦690,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content2_image5">
+                <div class="content_img1">
+                    <img src="티셔츠/14.png"><!--21-->
+                        <p class="image_type1">Versace</p>
+                        <p class="image_type2">노티컬 프린트 스트라이프 셔츠</p>
+                        <p class="image_type3">￦1,063,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/15.png"><!--22-->
+                        <p class="image_type1">Versace</p>
+                        <p class="image_type2">베르사체 갤러리 셔츠</p>
+                        <p class="image_type3">￦2,140,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            
+            </div>
+            
+    </div>
+
+
+    <div class="main_content3" style="display: none;">
+            <div class="content3_image1">
+                <div class="content_img1">
+                    <img src="티셔츠/16.png"><!--23-->
+                        <p class="image_type1">Diesel</p>
+                        <p class="image_type2">Dsl 3D 토드 백</p>
+                        <p class="image_type3">￦610,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+
+                        <img src="티셔츠/17.png"><!--24-->
+                        <p class="image_type1">Dolce & Gabbana</p>
+                        <p class="image_type2">돌체앤가바나 레이스업 가죽 앵글 부츠</p>
+                        <p class="image_type3">￦1,570,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content3_image2">
+                <div class="content_img1">
+                    <img src="티셔츠/18.png"><!--25-->
+                        <p class="image_type1">Dolce & Gabbana</p>
+                        <p class="image_type2">포르토피노 실크 싱글 울 실크 블레이저</p>
+                        <p class="image_type3">￦1,751,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/19.png"><!--26-->
+                        <p class="image_type1">DSQIARED2</p>
+                        <p class="image_type2">로고 프린트 토트 백</p>
+                        <p class="image_type3">￦571,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content3_image3">
+                <div class="content_img1">
+                    <img src="티셔츠/20.png"><!--27-->
+                        <p class="image_type1">Giuseppe Zanotti</p>
+                        <p class="image_type2">GZ94 패널 벨벳 스니커즈</p>
+                        <p class="image_type3">￦699,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/21.png"><!--28-->
+                        <p class="image_type1">TOM FORD Eyewear</p>
+                        <p class="image_type2">파일럿 프레임 선글라스</p>
+                        <p class="image_type3">￦617,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content3_image4">
+                <div class="content_img1">
+                    <img src="티셔츠/22.png"><!--29-->
+                        <p class="image_type1">Yohji Wamamoto</p>
+                        <p class="image_type2">콘트라스트 스티치 가디건</p>
+                        <p class="image_type3">￦1,363,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/23.png"><!--30-->
+                        <p class="image_type1">Comme Des Garcons Shirt</p>
+                        <p class="image_type2">라코스테 비대칭 로고 패치 올 가디건</p>
+                        <p class="image_type3">￦888,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            </div>
+            
+            <div class="content3_image5">
+                <div class="content_img1">
+                    <img src="티셔츠/24.png"><!--31-->
+                        <p class="image_type1">Burberry</p>
+                        <p class="image_type2">가죽 재킷</p>
+                        <p class="image_type3">￦11,553,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+                    <div class="content_img1">
+                        <img src="티셔츠/25.png"><!--32-->
+                        <p class="image_type1">Off-White</p>
+                        <p class="image_type2">버질 선글라스</p>
+                        <p class="image_type3">￦270,000</p>
+                        <p class="image_type4">New</p>
+                    </div>
+            
+            </div>
+            
+    </div>
+</div>  
+
+
+    <!--<div class="red"></div>-->
+     
+   
+    
+    <div class="nodenmain2">  
+        <a href="#" class="button" id="loadMoreBtn">MORE</a>
+    </div> 
+    
+
+    
+    <div class="line"></div>
+    <div class="btn_page_top" id="scrollTopBtn">
+        <a href="#"><img src="img/arrow.png"></a>
+    </div>
+
+    <footer>
+       <div class="footer1">
+       
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="http://127.0.0.1:5500/fashion22.html">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer_img social-icons">
+                    <a href="#"><img src="img/icon1.png"></i></a>
+                    <a href="#"><i class="fab fa-tifooter-socialktok"></i><img src="img/icon4.png"></i></a>
+                    <a href="#"><i class="fab fa-youtube"><img src="img/icon3.png"></i></a>
+                    <a href="#"><i class="fab fa-youtube"><img src="img/icon2.png"></i></a>
+                    <a href="#"><i class="fab fa-youtube"><img src="img/icon5.png"></i></a>
+                </div>
+                <p class="footer_p1">© 2025 Urban Vogue. All Rights Reserved.</p>
+            </div>
+        
+         
+       </div>
+
+    </footer>
+    
+
+</div>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollTopBtn.classList.remove("hidden");
+        } else {
+            scrollTopBtn.classList.add("hidden");
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+
+// 모든 메뉴 항목 클릭 이벤트 추가
+document.querySelectorAll('.navbartype1, .navbartype2, .navbartype3, .navbartype4').forEach(item => {
+    item.addEventListener('click', function(e) {
+        // 클릭된 메뉴의 서브메뉴 찾기
+        const submenu = this.querySelector('.submenu');
+
+        // 다른 서브메뉴를 모두 닫기
+        document.querySelectorAll('.submenu').forEach(sub => {
+            if (sub !== submenu) {
+                sub.classList.remove('open');
+            }
+        });
+
+        // 현재 서브메뉴가 열려있지 않으면 열기, 열려있으면 닫기
+        if (submenu) {
+            submenu.classList.toggle('open');
+        }
+
+        // 클릭 이벤트가 부모까지 전파되지 않도록 막음 (배경 클릭 이벤트로 서브메뉴 닫히지 않게)
+        e.stopPropagation();
+    });
+});
+
+// 배경을 클릭했을 때 서브메뉴 닫기
+document.addEventListener('click', function(e) {
+    // 서브메뉴가 열려있다면 닫기
+    document.querySelectorAll('.submenu').forEach(sub => {
+        sub.classList.remove('open');
+    });
+});
+
+
+</script>
+</html>

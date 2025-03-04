@@ -1,0 +1,69 @@
+/* Ferragamo-WCS SDK Integration */
+import { XG } from './clientSdk.js';
+import {
+	sdkTrackPlp,
+	sdkTrackPdp,
+	runPurchaseTracking,
+	getSdkUserInfo,
+	findProductPageData,
+	getDlEventFromField,
+	findCategoryPageData,
+	getAltPageLocale,
+	setLocale,
+	gaTrack,
+	isGiftingWidgetPage
+} from './integrationHelpers.js';
+
+/**
+ * XGen integration object that will fire on each page load
+ */
+XG({
+	pages: [
+		{
+			name: 'global',
+			onPageMatched: [runPurchaseTracking, setLocale, gaTrack]
+		},
+		{
+			name: 'pdp',
+			triggers: [{ dataLayer_has: { finder: getDlEventFromField('Product Page', 'pageCategory') } }],
+			contextualPages: {
+				isSalePDP: findProductPageData('Sale') == 'true',
+				isGiftingWidgetPage: isGiftingWidgetPage()
+			},
+			context: {
+				gender: findProductPageData('Level1'),
+				macroCategory: findProductPageData('Level2')
+			},
+			onPageMatched: sdkTrackPdp
+		},
+		{
+			name: 'plp',
+			triggers: [{ dataLayer_has: { finder: getDlEventFromField('Category Page', 'pageCategory') } }],
+			contextualPages: {
+				isSalePLP:
+					findCategoryPageData('Canonical_URL')?.includes('-sale') ||
+					document.querySelectorAll('s[class$=price-old]')?.length >= 5
+			},
+			context: {
+				gender: findCategoryPageData('Level1'),
+				macroCategory: findCategoryPageData('Level2')
+			},
+			onPageMatched: sdkTrackPlp
+		},
+		{
+			name: 'default',
+			triggers: [{ dataLayer_has: { finder: getDlEventFromField('gtm.load', 'event') } }]
+		}
+	],
+	localeFunction: {
+		func: getAltPageLocale,
+		replaceFunc: ({ path, locale }) => {
+			if (path.startsWith('/shop/')) {
+				return path.replace('/shop/', `/shop/${locale}/`);
+			}
+
+			return `/shop/${locale}${path}`;
+		}
+	},
+	userInfo: await getSdkUserInfo()
+});

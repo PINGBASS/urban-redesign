@@ -1,3 +1,18 @@
+
+body{
+    background:#07032b;
+ 
+   
+}
+
+*{padding:0; margin:0; box-sizing: border-box;}
+ ul{list-style:none;}
+a{text-decoration:none;
+  display: block;
+}
+li{list-style: none;}
+img{vertical-align: top;}
+
 @media screen and (min-width:360px) and (max-width:767px){
     /*-----------------------------------fashion1*/
     .content_img1{
@@ -75,19 +90,11 @@
     .navbar1{
         display:flex;
         justify-content: center;
-        gap: 10vw;
+        gap: 6vw;
         position: fixed; 
-        top: 35.5vw;
-        left:21vw; 
-        width: 56%;}
-        
-    
-    
-    /* 기본 상태 */
-    /* 기본 a 태그 스타일 */
-    
-    
-    
+        top: 28.5vw;
+        width: 100%;
+    }
     .navbar2{
         display:flex;
         align-items: center;
@@ -103,7 +110,7 @@
     .navbar2 a{
         color:#acacac;
         font-size:clamp(0.8rem , 1vw ,2rem);
-        padding: 5vw;
+        padding: 2vw;
     }
     .navbar2 a:hover,.navbar1 a:hover{
         color:#bfff48;

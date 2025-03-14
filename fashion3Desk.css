@@ -1,3 +1,4 @@
+@media screen and (min-width:1023px){
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
@@ -1013,3 +1014,4 @@ label[for="modal1"] {
     .next-btn-new {
         right: 10px;
     }
+}

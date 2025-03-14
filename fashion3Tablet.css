@@ -138,7 +138,7 @@
     display: inline-block;
     padding: 10px 20px; 
     text-decoration: none; 
-    font-weight: 200;
+    font-weight: 400;
     overflow: hidden;
     width: 100%; 
     border-radius: 6px;
@@ -180,7 +180,7 @@
     display:flex;
     flex-direction: column;
     gap: 1vw;
-
+    margin-right: 7vw;
 }
 .wishlist_1{
     display:flex;
@@ -188,7 +188,7 @@
 }
 .wishlist{
     width: 48%;
-    height: 4vw;
+    height: 4.5vw;
     border: 1px solid #6d6d6d;
     border-radius: 0.5vw;
     line-height: 2vw;
@@ -199,7 +199,7 @@
 }
 .avant_type_10{
     width: 48%;
-    height: 4vw;
+    height: 4.5vw;
     border: 1px solid #6d6d6d;
     border-radius: 0.5vw;
     line-height: 2vw;
@@ -437,7 +437,7 @@
 .custom-photo-grid img {
     width: 82%;
     height: auto;
-    margin-left: 1.5vw;
+    margin-left: 3.5vw;
 }
 
 
@@ -446,7 +446,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-   
+    
     color: #51ae26;
     border:1.5px solid#0b071e;
     font-size: 2rem;
@@ -454,7 +454,9 @@
     cursor: pointer;
     z-index: 10;
 }
-
+.custom-prev-btn{
+    margin-left:3vw;
+}
 
 .custom-next-btn {
     right: 8vw;
@@ -495,17 +497,14 @@
 
 .description_1{
     border: 2px solid rgba(55, 94, 34, 0.5);  
-   
     width: 90%;
-    height: 18vw;
+    height: 26vw;
     margin:0 auto;
     margin-top:7vw;
-    
 }
 .product_type1{
     font-size:clamp(22px, 1rem, 1.9rem);
     color:#bfff48;
-    
 }
 .product_type2{
     font-size:clamp(13px, 1rem, 1.4rem);
@@ -520,7 +519,6 @@
     font-weight: 300;
     margin-top:0.2vw;
     margin-left:0.6vw;
-    
 }
 .product_1{
     padding:1vw;
@@ -534,14 +532,12 @@
    justify-content: center;
    margin-top: 10vw;
    margin-bottom: 6vw;
-
 }
 .product_type5 a{
     color:#fff;
     font-size:clamp(9px, 0.8rem, 1rem);
     margin-left: 3vw;
     font-weight: 600;
-
 }
 .product_type6 a{
     color:#d6d6d6;
@@ -557,24 +553,16 @@
     height: 4.5vw;
     border: 1px solid#bfff48; 
     margin-top:4vw;
-    
 }
-
-
 /*==============*/
-
-
 .button2{
     text-decoration: none;
     font-size:1em;
     color:#dbdbdb;
-  
-   
     outline:0.5px solid#6e6e6e;
     position: relative;
     overflow: hidden;
     font-weight: 200;
-
 }
 .button2:before{
     content:'';
@@ -595,19 +583,12 @@
 }
 .button2:hover:before{
     width:150%;
-
 }
-
-
-
-
-
 .span1{
     color:#bfff48; 
     font-size: 0.8rem;
     font-weight: 500;
 }
-
 .fa-heart_1{
     color:#d6d6d6;
     font-size:clamp(13px, 1rem, 1.2rem);
@@ -639,7 +620,7 @@
     color:#d6d6d6;
     font-size:clamp(16px, 1.4rem, 1.5rem);
     margin-bottom: 3vw;
-    margin-top: 6vw;
+    margin-top: 14vw;
     text-align: center;
 }
 
@@ -668,7 +649,7 @@
     z-index: 10;
     position: relative;
     width: 100%;
-    height: 3.3vw;
+    height: 4.3vw;
     border: 1px solid #6d6d6d;
     border-radius: 0.5vw;
     line-height: 2vw;
@@ -676,7 +657,7 @@
 }
 .avant_type_7{
     width: 100%;
-    height: 3.3vw;
+    height: 4.3vw;
     border: 1px solid #6d6d6d;
     border-radius: 0.5vw;
     line-height: 2vw;
@@ -702,8 +683,8 @@
 }
 label[for="size-select-new"] {
     color: #fff; /* 파란색 */
-    margin-left: 2vw;
-    line-height: 3vw;
+    margin-left: 11vw;
+    line-height: 3.5vw;
 }
 label[for="modal2"] {
     

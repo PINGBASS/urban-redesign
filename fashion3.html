@@ -765,30 +765,35 @@ sizeOptionsNew.forEach(option => {
 
 
 
-/*4개 이미지 슬라이더*/
-let currentIndexNew = 0;  // 현재 보이는 슬라이드 인덱스
+let currentIndexNew = 0; 
 
-const slidesNew = document.querySelectorAll('.product-slide-new'); // 모든 슬라이드 요소
+const slidesNew = document.querySelectorAll('.product-slide-new'); 
 const prevButtonNew = document.querySelector('.prev-btn-new'); 
 const nextButtonNew = document.querySelector('.next-btn-new'); 
 const totalSlidesNew = slidesNew.length; 
+const sliderNew = document.querySelector('.product-slider-new');
 
-// 슬라이드 이동 함수
+// 반응
 function moveSlideNew() {
-    const sliderNew = document.querySelector('.product-slider-new');
-    sliderNew.style.transform = `translateX(-${currentIndexNew * 25}%)`;  }
+    const screenWidth = window.innerWidth;
+    const slideWidth = screenWidth <= 768 ? 100 : 25; 
+    sliderNew.style.transform = `translateX(-${currentIndexNew * slideWidth}%)`;
+}
 
-// 이전 버튼 클릭
+// 이전
 prevButtonNew.addEventListener('click', () => {
-    currentIndexNew = (currentIndexNew === 0) ? totalSlidesNew - 4 : currentIndexNew - 1;
+    currentIndexNew = (currentIndexNew === 0) ? totalSlidesNew - (window.innerWidth <= 768 ? 1 : 4) : currentIndexNew - 1;
     moveSlideNew();
 });
 
-// 다음 버튼 클릭
+// 다음
 nextButtonNew.addEventListener('click', () => {
-    currentIndexNew = (currentIndexNew === totalSlidesNew - 4) ? 0 : currentIndexNew + 1;
+    currentIndexNew = (currentIndexNew === totalSlidesNew - (window.innerWidth <= 768 ? 1 : 4)) ? 0 : currentIndexNew + 1;
     moveSlideNew();
 });
+
+//슬라이드 위치 조정
+window.addEventListener('resize', moveSlideNew);
 
 
 

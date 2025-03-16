@@ -58,6 +58,14 @@
 <body>
 
  <div id="urbanvogue1">  
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>사이드 웹페이지 안내</h3>
+            <p>1. 두번째 줄 어셈블리지 티셔츠 상세페이지</p>
+            <p>2. Login 페이지</p>
+        </div>
+    </div>
     <div class="unbanvogue_nav">
         <div class="urbanmain1">  
             <a href="#" class="maintype">Urban Vogue</a>
@@ -491,7 +499,7 @@
 });
 
 
-// 모든 메뉴 항목 클릭 이벤트 추가
+
 document.querySelectorAll('.navbartype1, .navbartype2, .navbartype3, .navbartype4').forEach(item => {
     item.addEventListener('click', function(e) {
         // 클릭된 메뉴의 서브메뉴 찾기
@@ -509,19 +517,37 @@ document.querySelectorAll('.navbartype1, .navbartype2, .navbartype3, .navbartype
             submenu.classList.toggle('open');
         }
 
-        // 클릭 이벤트가 부모까지 전파되지 않도록 막음 (배경 클릭 이벤트로 서브메뉴 닫히지 않게)
+      
         e.stopPropagation();
     });
 });
 
-// 배경을 클릭했을 때 서브메뉴 닫기
+// 배경클릭/서브메뉴 닫기
 document.addEventListener('click', function(e) {
-    // 서브메뉴가 열려있다면 닫기
+    // 서브메뉴열려있음 닫기
     document.querySelectorAll('.submenu').forEach(sub => {
         sub.classList.remove('open');
     });
 });
 
+  // 요소 선택
+  var modal = document.getElementById("modal");
+        var closeBtn = document.querySelector(".close");
 
+        
+        window.onload = function() {
+            modal.style.display = "block";
+        };
+
+       
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
 </script>
 </html>
